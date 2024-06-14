@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>CALCULADORA </title>
+<script language="javascript" type="text/javascript">
+	function sumar() {
+		var n1=document.formu.op1.value;
+		var n2=document.formu.op2.value;
+		a=parseFloat(n1);
+		b=parseFloat(n2);
+		s=a+b;
+		document.formu.res.value=s;
+	}
+	<!--        MODIFICAR LAS OTAR FUNCIONES Y ES TRABAJO PARA ENTREGAR          -->
+	function restar() {
+		var n1=document.formu.op1.value;
+		var n2=document.formu.op2.value;
+		a=parseFloat(n1);
+		b=parseFloat(n2);
+		s=a-b;
+		document.formu.res.value=s;
+	}
+	function producto() {
+		var n1=document.formu.op1.value;
+		var n2=document.formu.op2.value;
+		a=parseFloat(n1);
+		b=parseFloat(n2);
+		s=a*b;
+		document.formu.res.value=s;
+	}
+	function division() {
+		var n1=document.formu.op1.value;
+		var n2=document.formu.op2.value;
+		a=parseFloat(n1);
+		b=parseFloat(n2);
+		s=a/b;
+		document.formu.res.value=s;
+	}
+	function modulo() {
+		var n1=document.formu.op1.value;
+		var n2=document.formu.op2.value;
+		a=parseFloat(n1);
+		b=parseFloat(n2);
+		s=a%b;
+		document.formu.res.value=s;
+	}
+	function facto() {
+		var n1=document.formu.op1.value;
+		a=parseFloat(n1);
+		s=1;
+		for(i=1;i<=a;i++) { s=s*i; }
+		document.formu.res.value=s;
+	}
+</script>
+</head>
+
+<body>
+<form action="" name="formu">
+<table width="613" border="1" align="center">
+  <tr>
+    <td height="56" align="center"><input type="button" value="SUMAR" onclick=sumar();></td>
+    <td><div align="center"> <input type="text" name="op1"/></div></td>
+  </tr>
+  <tr>
+    <td height="56" align="center"><input type="button" value="RESTA" onclick=restar();></td>
+    <td><div align="center"> <input type="text" name="op2"/></div></td>
+  </tr>
+  <tr>
+    <td height="56" align="center"><input type="button" value="PRODUCTO" onclick=producto();></td>
+    <td rowspan="4"><div align="center"></div></td>
+  </tr>
+  <tr>
+    <td height="56" align="center"><input type="button" value="DIVISION" onclick=division();></td>
+  </tr>
+  <tr>
+    <td height="56" align="center"><input type="button" value="MODULO" onclick=modulo();></td>
+  </tr>
+  <tr>
+    <td height="56" align="center"><input type="button" value="FACTORIAL" onclick=facto();></td>
+  </tr>
+  <tr>
+    <td height="77" align="center"><font size="+3">RESULTADO</font></td>
+    <td><div align="center"><input  name="res" disabled="disabled" /></div></td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
